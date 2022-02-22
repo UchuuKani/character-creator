@@ -8,6 +8,7 @@
 
 .header {
   padding-bottom: 64px;
+  width: 65%;
 }
 
 .title {
@@ -24,7 +25,24 @@
 }
 
 .characterWrapper {
+  min-height: 500px;
+  position: fixed;
+  top: 15%;
+  bottom: 25%;
+  /*
+    not sure why, but seems a combination of top and bottom is needed for the 
+    characterWrapper element to show up on the screen. If only one of the properties
+    is set, the auto value for the others does not seem to cooperate and position
+    the element on the screen...
+
+    does seem relevant to set both though. Would set top to offset the character
+    below the "Create your character" heading slightly when fully scrolled to the top
+    and setting bottom allows the character to stay above the footer when scrolled
+    all the way to the
+  */
+  right: 22%;
 }
 
 .controlColumn {
+  width: 50%;
 }
