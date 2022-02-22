@@ -28,7 +28,7 @@
   min-height: 500px;
   position: fixed;
   top: 15%;
-  bottom: 25%;
+  bottom: -75px;
   /*
     not sure why, but seems a combination of top and bottom is needed for the 
     characterWrapper element to show up on the screen. If only one of the properties
@@ -40,7 +40,7 @@
     and setting bottom allows the character to stay above the footer when scrolled
     all the way to the
   */
-  right: 22%;
+  right: 15%;
 }
 
 .controlColumn {
