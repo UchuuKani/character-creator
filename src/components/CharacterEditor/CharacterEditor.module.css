@@ -1,6 +1,12 @@
 .characterEditor {
   padding-top: 128px;
   padding-bottom: 64px;
+  /* 
+    setting "position: relative" here to give the characterEditor class element
+    higher priority based on dom order (.characterEditor comes later in the dom
+    compared to an element that I gave "position: fixed"
+  */
+  position: relative;
 }
 
 .maxWidthWrapper {

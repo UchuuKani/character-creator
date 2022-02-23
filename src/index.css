@@ -2,6 +2,11 @@ html,
 body,
 #root {
   height: 100%;
+  /* 
+    choosing to create a stacking context on the root element so that two
+    positioned elements can be compared with each other
+  */
+  isolation: isolate;
 }
 
 body {
@@ -12,7 +17,7 @@ body {
 *,
 *:before,
 *:after {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 
